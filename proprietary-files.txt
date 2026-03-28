@@ -1070,3 +1070,5 @@ vendor/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so;MODULE_SUFFIX
 vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
 
 # vi:ft=conf
+
+system_ext/lib64/vendor.qti.hardware.display.config-V5-ndk.so
