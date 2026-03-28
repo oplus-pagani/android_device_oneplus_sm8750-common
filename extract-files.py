@@ -44,6 +44,10 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    # forcefully enable full-band Wi-Fi support for 2.4GHz/5GHz/6GHz
+    'odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini': blob_fixup()
+        .regex_replace(r'BandCapability=\d+', 'BandCapability=0')
+        .regex_replace(r'gEnable6ghz=\w+', 'gEnable6ghz=1'),
     'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff': blob_fixup()
         .add_needed('libshims_aidl_fingerprint_v3.oplus.so'),
     (
@@ -98,6 +102,13 @@ blob_fixups: blob_fixups_user_type = {
     (
         'vendor/lib64/libapengine.so',
         'vendor/lib64/libqti-perfd.so',
+	# fixup?
+	    'vendor/lib64/libaodoptfeature.so',
+        'vendor/lib64/libcamerapoweroptfeature.so',
+        'vendor/lib64/libgamepoweroptfeature.so',
+        'vendor/lib64/libvideooptfeature.so',
+        'vendor/lib64/libwfddisplayconfig_vendor.so',
+        'system_ext/lib64/libwfddisplayconfig.so',
     ): blob_fixup()
         .replace_needed('vendor.qti.hardware.display.config-V5-ndk.so', 'vendor.qti.hardware.display.config-V12-ndk.so'),
     'vendor/lib64/libaudioserviceexampleimpl.so': blob_fixup()

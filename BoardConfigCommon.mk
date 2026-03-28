@@ -3,6 +3,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom-caf/sm8750
+
 COMMON_PATH := device/oneplus/sm8750-common
 
 # A/B
