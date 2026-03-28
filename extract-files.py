@@ -102,13 +102,6 @@ blob_fixups: blob_fixups_user_type = {
     (
         'vendor/lib64/libapengine.so',
         'vendor/lib64/libqti-perfd.so',
-	# fixup?
-	    'vendor/lib64/libaodoptfeature.so',
-        'vendor/lib64/libcamerapoweroptfeature.so',
-        'vendor/lib64/libgamepoweroptfeature.so',
-        'vendor/lib64/libvideooptfeature.so',
-        'vendor/lib64/libwfddisplayconfig_vendor.so',
-        'system_ext/lib64/libwfddisplayconfig.so',
     ): blob_fixup()
         .replace_needed('vendor.qti.hardware.display.config-V5-ndk.so', 'vendor.qti.hardware.display.config-V12-ndk.so'),
     'vendor/lib64/libaudioserviceexampleimpl.so': blob_fixup()
