@@ -1003,8 +1003,6 @@ odm/etc/wifi/sar-vendor-cmd.xml
 odm/etc/wifi/wifisar.cfg
 odm/etc/wifi.cfg
 odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini
-odm/vendor/etc/wifi/WCNSS_qcom_cfg_roam.ini
-odm/vendor/etc/wifi/WCNSS_qcom_cfg_cmcc.ini
 vendor/bin/cnss-daemon
 vendor/etc/init/init.vendor.wlan.rc
 vendor/etc/wifi/p2p_supplicant_overlay.conf
