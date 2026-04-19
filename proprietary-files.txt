@@ -419,7 +419,7 @@ system_ext/etc/horae/horae.conf
 system_ext/etc/init/horae.rc
 
 # Hotword Enrollment - from "CPH2723_16.0.2.400"
-my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml|9db16afa5f2fe13314a3b50e65fa9146680aeb0f
+my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml|dce101edaf6acb2e6384be094f743bf95a346a3d
 my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar|c10dd29bcfdfdce5efcfb3f9ddf2643c7099e4db
 my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk|d04de713728641577f0bdd9430fa9fb4718c7f06
 my_product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk:product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk|979f35482c659c89af1208811262c0ea98306641
