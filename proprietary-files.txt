@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 13 (CPH2653_16.0.10.501(EX01)).
+## are from OnePlus 13T (PKX110_16.0.10.500(CN01)).
 
 # ACDBs
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_4.2_enpuv5.pmd
@@ -42,7 +42,6 @@ odm/etc/audio_algos_ver/OPREC_version.txt
 odm/etc/audio_algos_ver/OPSPT_Version.txt
 odm/etc/audio_algos_ver/OPSR_Version.txt
 odm/etc/audio_algos_ver/OPVE_Version.txt
-odm/etc/init/init.audio.rc
 odm/lib64/libSchedAssistExtImpl_vendor.so
 odm/lib64/libtfa98xx.so
 vendor/etc/models/acd/environment.eai
@@ -418,8 +417,8 @@ system_ext/bin/horae
 system_ext/etc/horae/horae.conf
 system_ext/etc/init/horae.rc
 
-# Hotword Enrollment - from "CPH2723_16.0.2.400"
-my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml|dce101edaf6acb2e6384be094f743bf95a346a3d
+# Hotword Enrollment - from OxygenOS 16.0.10.500
+my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml|9db16afa5f2fe13314a3b50e65fa9146680aeb0f
 my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar|c10dd29bcfdfdce5efcfb3f9ddf2643c7099e4db
 my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk|d04de713728641577f0bdd9430fa9fb4718c7f06
 my_product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk:product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk|979f35482c659c89af1208811262c0ea98306641
