@@ -1,0 +1,4 @@
+genfscon proc /sys/walt/sched_boost u:object_r:proc_sched:s0
+genfscon proc /sys/walt/sched_downmigrate u:object_r:proc_sched:s0
+genfscon proc /sys/walt/sched_idle_enough u:object_r:proc_sched:s0
+genfscon proc /sys/walt/sched_upmigrate u:object_r:proc_sched:s0
