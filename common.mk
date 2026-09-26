@@ -556,3 +556,8 @@ PRODUCT_COPY_FILES += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8750-common/sm8750-common-vendor.mk)
+
+# Thermal
+ONEPLUS_THERMAL_ENGINE_CONFIG ?= device/oneplus/sm8750-common/configs/thermal/thermal-engine.conf
+PRODUCT_COPY_FILES += \
+    $(ONEPLUS_THERMAL_ENGINE_CONFIG):$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
