@@ -1,3 +1,0 @@
-# Allow SystemUI to traverse the OPlus display sysfs directory for UDFPS fppress.
-allow platform_app vendor_sysfs_graphics:dir search;
-allow platform_app sysfs_notify_fppress:file { open getattr write };
