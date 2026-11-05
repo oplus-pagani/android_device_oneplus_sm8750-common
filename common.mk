@@ -422,8 +422,9 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel/pixelstats \
     hardware/google/pixel/power-libperfmgr \
     hardware/lineage/interfaces/power-libperfmgr \
+    hardware/oplus \
     hardware/qcom-caf/common/libqti-perfd-client \
-    hardware/oplus
+    hardware/qcom-caf/sm8750
 
 # Storage
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
@@ -466,6 +467,10 @@ PRODUCT_COPY_FILES += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti
+
+ONEPLUS_THERMAL_ENGINE_CONFIG ?= device/oneplus/sm8750-common/configs/thermal/thermal-engine.conf
+PRODUCT_COPY_FILES += \
+    $(ONEPLUS_THERMAL_ENGINE_CONFIG):$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
 # Touch
 ifneq ($(TARGET_IS_TABLET),true)
@@ -556,8 +561,3 @@ PRODUCT_COPY_FILES += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8750-common/sm8750-common-vendor.mk)
-
-# Thermal
-ONEPLUS_THERMAL_ENGINE_CONFIG ?= device/oneplus/sm8750-common/configs/thermal/thermal-engine.conf
-PRODUCT_COPY_FILES += \
-    $(ONEPLUS_THERMAL_ENGINE_CONFIG):$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
