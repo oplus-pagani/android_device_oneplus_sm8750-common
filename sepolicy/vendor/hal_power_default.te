@@ -1,2 +1,0 @@
-# Allow libperfmgr to apply WALT scheduler powerhints from powerhint.json.
-allow hal_power_default proc_sched:file rw_file_perms;
